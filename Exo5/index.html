@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5</title>
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <label for="">Premier nombre</label>
+            <input type="text" id="input1" value="">
+        </div>
+        <div class="form-group">
+            <label for="">Deuxième nombre</label>
+            <input type="text" id="input2" value="">
+        </div>
+       
+        <button type="submit" onclick="Multiply()">Valider</button>
+    </form>
+</body>
+<script>
+    function Multiply() {
+        let input1 = document.getElementById('input1').value;
+        let input2 = document.getElementById('input2').value;
+        let result = input1*input2;
+        if(result){   //ou on peut retirer la ligne 27 et écrire " if (input1 && input2){ "
+        alert(input1*input2);
+        } else {
+            alert('Veuillez écrire des chiffres');
+        }
+    }
+</script>
+</html>

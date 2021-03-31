@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 6</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="age">
+        <input type="button" onclick="displayInput()" value="valide">
+    </form>
+     <!-- <label for="">Votre âge:</label>
+    }    <input type="text" id="input" value="">
+    <button type="submit" onclick="displayInput()">Valider</button>-->
+
+    <script>
+        function displayInput(){
+            var age = document.getElementById('age').value;
+            //si la variable age existe 
+            if (age) {
+                // si la variable est supérieure à zero
+                if(age > 0) {
+                // si la variable est supérieure ou égal à 18
+                    if (age >= 18) {
+                    // alors une modale affiche "tu es majeur"
+                    alert( 'Tu es majeur' );
+                // sinon une modale affiche "tu es mineur"
+                 } else {
+                alert('Tu es mineur');
+                }
+            // si la condition ligne 26 n'est pas remplie, affiche une modale demandant de rentrant un age valide
+            } else {
+                alert('merci de mettre un âge valide');
+                }
+            //si la condition ligne 22 n'est pas remplie (si age n'existe pas) alors 
+        }else {
+            alert ('veuillez remplir le champ')
+        }
+        }
+    </script>
+</body>
+</html>
